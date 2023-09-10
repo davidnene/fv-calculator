@@ -16,17 +16,9 @@ function Form() {
         1: "Simple Interest",
         2: "Compound Interest",
     }
-    // function npvCalculator() {
-    //     if (calcType === "1") {
-    //         setResults(principle + (principle * (interest/100) * years));
-            
-    //     }else if (calcType === "2") {
-    //         setResults(principle + (1 + (interest/100)**years));
-    //     }
-    // }
+ 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(e.target)
         if (calcType === calc[0]) {
             alert("Please Select Calculation Format");
             setCalcType(calc[0])
@@ -50,19 +42,14 @@ function Form() {
     }
 
     function handleCalcTypeChange(e) {
-        SetShowResults(false)
-        console.log(e.target.value)
-        console.log(calcType);
+        SetShowResults(false);
         if (e.target.value === calc[1]) {
             setCalcType(calc[1])
-            //setResults(principle + (principle * (interest/100) * years));
-            setResults(() => (Math.round(principle * (interest/100) * years) + parseInt(principle)));
             
-            //console.log("1")
+            setResults(() => (Math.round(principle * (interest/100) * years) + parseInt(principle)));
         }else if (e.target.value === calc[2]) {
             setCalcType(calc[2])
             setResults(Math.round(parseInt(principle) * (1 + (interest/100))**years));
-            //console.log("2")
         } else if (e.target.value === calc[0]) {
             setCalcType(calc[0])
             alert('Please Select Calculation Format')
