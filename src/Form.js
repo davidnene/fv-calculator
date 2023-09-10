@@ -20,7 +20,7 @@ function Form() {
     function handleSubmit(e) {
         e.preventDefault();
         if (calcType === calc[0]) {
-            alert("Please Select Calculation Format");
+            alert("Please Select a Calculation Format");
             setCalcType(calc[0])
             SetShowResults(false);
             
@@ -52,7 +52,7 @@ function Form() {
             setResults(Math.round(parseInt(principle) * (1 + (interest/100))**years));
         } else if (e.target.value === calc[0]) {
             setCalcType(calc[0])
-            alert('Please Select Calculation Format')
+            alert('Please Select a Calculation Format')
             SetShowResults(false);
         }
     }
