@@ -98,7 +98,7 @@ function Form() {
             </div>
         </form>
         <div className="position-relative mx-auto">
-          <p>{showResults? results: ''}</p>
+          {showResults? <h5>Total Amount: {results}</h5>: ''}
         </div> 
     </div>
     </div>
