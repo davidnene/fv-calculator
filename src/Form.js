@@ -6,7 +6,7 @@ function Form() {
     const [principle, setPrinciple] = useState('');
     const [interest, setInterest] = useState('');
     const [years, setYears] = useState('');
-    const [calcType, setCalcType] = useState('0');
+    const [calcType, setCalcType] = useState('Choose...');
     const [results, setResults] = useState('');
     const [showResults, SetShowResults] = useState(false)
 
@@ -94,11 +94,14 @@ function Form() {
             </div>
             <div className="col-auto p-5">
                 <button type="submit" className="btn btn-primary" style={{"marginRight": "20px", "marginBottom": "20px"}}>Calculate</button>
-                {showResults? <button onClick={handleClearButtonClick} type="button" className="btn btn-danger" style={{"marginBottom": "20px"}}>Clear Output</button>: ''}
+               
             </div>
+            <div className="position-relative mx-auto">
+                 {showResults? <h5>Total Amount: {results}</h5>: ''}
+            </div> 
         </form>
         <div className="position-relative mx-auto">
-          {showResults? <h5>Total Amount: {results}</h5>: ''}
+            {showResults? <button onClick={handleClearButtonClick} type="button" className="btn btn-danger" style={{"marginBottom": "20px"}}>Clear Output</button>: ''}
         </div> 
     </div>
     </div>
