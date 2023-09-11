@@ -1,4 +1,4 @@
-## Net Present Value (NPV) of Money Calculator
+## Future Value of Money Calculator
 
 - This app calculates both Simple Interest and Compound interest of money.
 ### Formulae

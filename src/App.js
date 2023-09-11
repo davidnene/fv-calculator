@@ -4,8 +4,8 @@ import Form from './Form';
 function App() {
   return (
     <div className="App p-5">
-      <h2 style={{"color":"#382f60"}}>NPV Calculator</h2>
-      <p>This is a net present value of money calculator</p>
+      <h2 style={{"color":"#382f60"}}>FV Calculator</h2>
+      <p>This is a future value of money calculator</p>
       <Form/>
       <div className="col-auto p-3">
           <footer className='p-3' style={{"background":"#485188", "color":"white"}}>
