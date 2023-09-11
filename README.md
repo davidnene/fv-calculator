@@ -6,10 +6,11 @@
  - Total amount (Compound interest) = Principle(1 + interest(%))**time(years)
 
 ### Live link
-- https://npv-calculator.netlify.app/ 
+- https://fv-calculator.netlify.app/ 
 
 #### Note
 - To try new values, clear output to refresh the app.
+- When you update values, change Calculation type to Choose then select your preferred calculation so that the system can pick up the updated values.
 
 ### Contribution
 - This project is open-source and invites contributers to make it better.
